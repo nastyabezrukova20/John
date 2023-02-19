@@ -1,0 +1,238 @@
+* heebo-regular - latin */
+@font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Heebo';
+   font-style: normal;
+   font-weight: 400;
+   src: url('../fonts/heebo-v21-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/heebo-v21-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* heebo-500 - latin */
+ @font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Heebo';
+   font-style: normal;
+   font-weight: 500;
+   src: url('../fonts/heebo-v21-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/heebo-v21-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* heebo-700 - latin */
+ @font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Heebo';
+   font-style: normal;
+   font-weight: 700;
+   src: url('../fonts/heebo-v21-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/heebo-v21-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* heebo-900 - latin */
+ @font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Heebo';
+   font-style: normal;
+   font-weight: 900;
+   src: url('../fonts/heebo-v21-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/heebo-v21-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+
+ /* настройки по умолчанию start */
+ html{
+   box-sizing: border-box;
+   position: relative; /* ограничитель для scroll всей страницы */
+   overflow-x: hidden; /* ограничитель для scroll всей страницы */
+}
+*, *::before, *::after{
+   box-sizing: inherit;
+}
+body{
+   font-family: 'Heebo', sans-serif;
+   font-style: normal;
+   font-size: 18px;
+   line-height: 26px;
+   font-weight: 400;
+   color: #21243D;
+   min-height: 100vh;
+   background-color: #FFFFFF;
+   position: relative; /* ограничитель для scroll всей страницы */
+   overflow-x: hidden; /* ограничитель для scroll всей страницы */
+
+} 
+img, svg {
+   display: block;
+   max-width: 100%; /*делаем всегда. чтобы изображение не превышало размеры контейнера, в котором оно находится*/
+   max-height: auto; /*делаем всегда. чтобы оно сжималось пропорционально*/
+   height: auto;
+   border: 0;
+}
+button{
+   padding: 0;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+   font-family: 'Heebo';
+}
+a{
+   text-decoration: none;
+   color: inherit;
+}
+ul{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+h1, h2, h3, p, figure{
+   margin: 0;
+}
+fieldset{
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+iframe{
+   border: 0;
+}
+.vissually-hidden{
+   position: fixed;
+   transform: scale(0);
+}
+.article__container{
+   max-width: 700px;
+   margin: 0 auto;
+   padding: 0 10px; 
+}
+/* настройки по умолчанию end */
+
+/* Header start */
+.header__container{
+   height: 70px;
+   padding: 0 60px;
+   margin-bottom: 78px;
+}
+.header__list{
+   height: 70px;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   column-gap: 34px;
+   justify-content: end;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 29px;
+   color: #000000; 
+   transition: color 0.3s ease 0s;
+}
+.header__link{
+   transition: color 0.3s ease 0s;
+}
+.header__link:hover{
+   color: #FF6464; 
+}
+/* Header end */
+
+/* article start */
+.title{
+   font-weight: 700;
+   font-size: 34px;
+   line-height: 50px;
+   margin-bottom: 30px;
+}
+.article__data{
+   display: flex;
+   align-items: center;
+   gap: 17px;
+   margin-bottom: 23px;
+}
+.article__year{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   height: 25px;
+   width: 62px;
+   font-weight: 900;
+   font-size: 18px;
+   line-height: 60px;
+   background-color: #FF7C7C;
+   border-radius: 16px;
+   color: #FFFFFF;
+}
+.desc{
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 29px;
+}
+.article__decsription{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color: #000000;
+   margin-bottom: 46px;
+}
+.img{
+   margin-bottom: 27px;
+}
+/* article end */
+
+
+/* footer start */
+.footer{
+   margin: 0 auto;
+}
+.footer__photos{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 35px;
+   padding-top: 50px;
+   padding-bottom: 26px;
+}
+.footer__image{
+   transition: color 0.3s ease 0s;
+}
+.footer__image:hover{
+   color: #bb4949;
+}
+.footer__desc{
+   font-size: 14px;
+   line-height: 21px;
+   text-align: center;
+   margin-bottom: 54px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+   .header__container{
+      margin-bottom: 10px;
+   }
+   
+}
+
+@media screen and (max-width: 540px) {
+   .header__list{
+      justify-content: center;
+   }
+   .title{
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 23px;
+   }
+   .article__data{
+      align-items: start;
+   }
+   .article__year{
+      font-size: 18px;
+      line-height: 60px;
+   }
+   .desc{
+      font-size: 18px;
+      line-height: 26px;
+   }
+   .article__decsription{
+      margin-bottom: 23px;
+   }
+}
